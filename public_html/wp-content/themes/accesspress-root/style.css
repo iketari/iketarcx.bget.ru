@@ -382,7 +382,7 @@ a {
 }
 
 a:hover {
-	color: #109BA5;	
+	color: #109BA5;
 }
 
 /*--------------------------------------------------------------
@@ -615,7 +615,7 @@ a:hover {
 --------------------------------------------------------------*/
 #main{
 	margin: 0 auto 30px;
-    width: 1140px; 
+    width: 1140px;
 }
 /*--------------------------------------------------------------
 10.1 Posts and pages
@@ -1106,7 +1106,7 @@ body {
     color: #FFF;
 }
 
-.boxed .caption-content-wrapper, 
+.boxed .caption-content-wrapper,
 .boxed .caption-read-more {
     margin-left: 100px;
 }
@@ -1119,7 +1119,7 @@ body {
   text-align: center;
 }
 
-.bx-wrapper .bx-pager .bx-pager-item, 
+.bx-wrapper .bx-pager .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
   display: inline-block;
   vertical-align: middle;
@@ -1267,7 +1267,7 @@ body {
 	display: block;
 	-webkit-transition: all 1s ease 0s;
 	-moz-transition: all 1s ease 0s;
-	transition: all 1s ease 0s;	
+	transition: all 1s ease 0s;
 }
 
 .service-image:hover .image-wrap{
@@ -1625,7 +1625,7 @@ body {
 	margin-right: 5px;
 }
 
-.blog-comments-wrap { 
+.blog-comments-wrap {
 	border-top: 1px solid #f1f1f1;
 	margin-top: 15px;
 	padding: 5px 0;
@@ -1635,7 +1635,7 @@ body {
 
 .blog-comments{
     width: 78%;
-    float: right;  
+    float: right;
 }
 
 .blog-comments .tags {
@@ -2609,7 +2609,7 @@ ol.comment-list li.comment ol.children {
 }
 
 .entry-thumbanil:hover img{
-	opacity: 0.8; 	
+	opacity: 0.8;
 }
 
 .entry-footer {
@@ -2680,7 +2680,7 @@ ol.comment-list li.comment ol.children {
 .page_header_wrap .entry-date:before{
 	color:#FFF;
 }
-.comments-link a, 
+.comments-link a,
 .entry-date {
 	color: #808080;
 	font-style: normal;
@@ -2713,7 +2713,7 @@ ol.comment-list li.comment ol.children {
  }
 
 .edit-link a:hover{
-	background: #109ba5;	
+	background: #109ba5;
 }
 
 /*--------------------------------------------------------------
@@ -2945,7 +2945,7 @@ Responsive grid for pages
 
 .ap-span3 {
 	width:49.0%;
-} 
+}
 
 .ap-span4 {
 	width:66.0%;
@@ -2959,184 +2959,3 @@ Responsive grid for pages
 	margin-left:0;
 	width:100%;
 }
-
-/*Custom blocks*/
-
-.blocks {
-    padding: 20px;
-    font-size: 17px;
-    text-align: center;
-}
-
-    .blocks__title {
-        border: 2px solid #1eb0bc;
-        line-height: 1.4;
-        font-size: 140%;
-        border-right-width: 0;
-        border-left-width: 0;
-        text-align: center;
-    }
-        .blocks__title-inner {
-            border: 1px solid #1eb0bc;
-            border-right-width: 0;
-            border-left-width: 0;
-            padding: 10px;
-            margin: 1px 0;
-        }
-
-    .blocks__list {
-        margin-top: 20px;
-    }
-        .blocks__list-left,
-        .blocks__list-right {
-            display: inline-block;
-            width: 49%;
-            vertical-align: top;
-            text-align: left;
-            min-width: 350px;
-            padding: 0 5%;
-            box-sizing: border-box;
-        }
-
-        .blocks__item {
-            text-align: center;
-            display: block;
-            margin: 20px;
-            padding: 10px;
-            background-color: #1eb0bc;
-            border-radius: 7px;
-        }
-        .blocks__item_important {
-            color: #fff;
-        }
-
-
-.eueler {
-    font-size: 15px;
-    position: relative;
-    width: 35em;
-    height: 35em;
-    margin: 0 auto;
-}
-    .eueler__title {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-	-ms-transform: translateX(-50%) translateY(-50%);
-        z-index: 2;
-        display: inline-block;
-        background-color: rgba(255,255,255,0.8);
-        padding: 0.4em;
-        border-radius: 1em;
-        font-size: 1.3em;
-    }
-
-    .eueler__circle {
-        width: 20em;
-        height: 20em;
-        display: block;
-        background: rgba(255,0,0,0.6);
-        border-radius: 50%;
-        position: absolute;
-        text-align: center;
-        transition: background 0.2s;
-    }
-        .eueler__circle-text {
-            display: inline-block;
-            top: 50%;
-            position: absolute;
-            transform: translateX(-50%) translateY(-50%);
-	    -ms-transform: translateX(-50%) translateY(-50%);
-            color: #fff;
-            padding: 0.25em;
-            font-size: 1.3em;
-        }
-
-    .eueler__circle_first {
-        top: 0;
-        left: 0;
-        background: rgba(83, 58, 113, 0.9);
-    }
-    .eueler__circle_first:hover {
-        width: 22em;
-        height: 22em;
-        background: rgba(83, 58, 113, 1);
-        z-index: 2;
-    }
-
-    .eueler__circle_second {
-        top: 0;
-        right: 0;
-        background: rgba(80, 197, 183, 0.9);
-    }
-    .eueler__circle_second:hover {
-        width: 22em;
-        height: 22em;
-        background: rgba(80, 197, 183, 1);
-        z-index: 2;
-    }
-
-    .eueler__circle_third {
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%) translateY(-8%);
-	-ms-transform: translateX(-50%) translateY(-8%);
-        background: rgba(212, 216, 83, 0.9);
-    }
-    .eueler__circle_third:hover {
-        width: 22em;
-        height: 22em;
-        background: rgba(212, 216, 83, 1);
-        z-index: 2;
-    }
-
-
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-	.eueler {
-    		font-size: 2.2vw;
-	}
-}
-
-
-/* Landscape phones and down */
-@media (max-width: 479px) {
-	.eueler {
-    		font-size: 2.2vw;
-	    	height: 50em;
-	}
-
-	.eueler__circle_first {
-    		top: 0;
-    		left: 50%;
-    		margin-left: -10em;
-	}
-
-	.eueler__circle_second {
-    		top: 15em;
-    		left: 50%;
-   		margin-left: -10em;
-	}
-
-	.eueler__circle_third {
-    		transform: none;
-		-ms-transform: none;
-    		top: 30em;
-    		left: 50%;
-    		margin-left: -10em;
-	}
-
-	.eueler__circle_first:hover,
-	.eueler__circle_second:hover,
- 	.eueler__circle_third:hover {
-        	width: 20em;
-        	height: 20em;
-	}
-	
-	.eueler__circle-text {
-		font-size: 2em;
-	}
-}
-

@@ -1,0 +1,190 @@
+/*
+Theme Name:     AccessPress Root Child
+Description:    Дочерняя тема для темы AccessPress Root
+Author:         Artsiom Mezin
+Author URI:     http://artsiom.mezin.eu
+Template:       accesspress-root
+Version:        0.1.0
+*/
+
+@import url("../accesspress-root/style.css");
+
+/*Custom blocks*/
+
+.blocks {
+    padding: 20px;
+    font-size: 17px;
+    text-align: center;
+}
+
+    .blocks__title {
+        border: 2px solid #1eb0bc;
+        line-height: 1.4;
+        font-size: 140%;
+        border-right-width: 0;
+        border-left-width: 0;
+        text-align: center;
+    }
+        .blocks__title-inner {
+            border: 1px solid #1eb0bc;
+            border-right-width: 0;
+            border-left-width: 0;
+            padding: 10px;
+            margin: 1px 0;
+        }
+
+    .blocks__list {
+        margin-top: 20px;
+    }
+        .blocks__list-left,
+        .blocks__list-right {
+            display: inline-block;
+            width: 49%;
+            vertical-align: top;
+            text-align: left;
+            min-width: 350px;
+            padding: 0 5%;
+            box-sizing: border-box;
+        }
+
+        .blocks__item {
+            text-align: center;
+            display: block;
+            margin: 20px;
+            padding: 10px;
+            background-color: #1eb0bc;
+            border-radius: 7px;
+        }
+        .blocks__item_important {
+            color: #fff;
+        }
+
+
+.eueler {
+    font-size: 15px;
+    position: relative;
+    width: 35em;
+    height: 35em;
+    margin: 0 auto;
+}
+    .eueler__title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+        z-index: 2;
+        display: inline-block;
+        background-color: rgba(255,255,255,0.8);
+        padding: 0.4em;
+        border-radius: 1em;
+        font-size: 1.3em;
+    }
+
+    .eueler__circle {
+        width: 20em;
+        height: 20em;
+        display: block;
+        background: rgba(255,0,0,0.6);
+        border-radius: 50%;
+        position: absolute;
+        text-align: center;
+        transition: background 0.2s;
+    }
+        .eueler__circle-text {
+            display: inline-block;
+            top: 50%;
+            position: absolute;
+            transform: translateX(-50%) translateY(-50%);
+	    -ms-transform: translateX(-50%) translateY(-50%);
+            color: #fff;
+            padding: 0.25em;
+            font-size: 1.3em;
+        }
+
+    .eueler__circle_first {
+        top: 0;
+        left: 0;
+        background: rgba(83, 58, 113, 0.9);
+    }
+    .eueler__circle_first:hover {
+        width: 22em;
+        height: 22em;
+        background: rgba(83, 58, 113, 1);
+        z-index: 2;
+    }
+
+    .eueler__circle_second {
+        top: 0;
+        right: 0;
+        background: rgba(80, 197, 183, 0.9);
+    }
+    .eueler__circle_second:hover {
+        width: 22em;
+        height: 22em;
+        background: rgba(80, 197, 183, 1);
+        z-index: 2;
+    }
+
+    .eueler__circle_third {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(-8%);
+	-ms-transform: translateX(-50%) translateY(-8%);
+        background: rgba(212, 216, 83, 0.9);
+    }
+    .eueler__circle_third:hover {
+        width: 22em;
+        height: 22em;
+        background: rgba(212, 216, 83, 1);
+        z-index: 2;
+    }
+
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	.eueler {
+    		font-size: 2.2vw;
+	}
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 479px) {
+	.eueler {
+    		font-size: 2.2vw;
+	    	height: 50em;
+	}
+
+	.eueler__circle_first {
+    		top: 0;
+    		left: 50%;
+    		margin-left: -10em;
+	}
+
+	.eueler__circle_second {
+    		top: 15em;
+    		left: 50%;
+   		margin-left: -10em;
+	}
+
+	.eueler__circle_third {
+    		transform: none;
+		-ms-transform: none;
+    		top: 30em;
+    		left: 50%;
+    		margin-left: -10em;
+	}
+
+	.eueler__circle_first:hover,
+	.eueler__circle_second:hover,
+ 	.eueler__circle_third:hover {
+        	width: 20em;
+        	height: 20em;
+	}
+
+	.eueler__circle-text {
+		font-size: 2em;
+	}
+}
