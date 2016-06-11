@@ -41,17 +41,19 @@
 			</div>
 		</div> <!-- top footer end -->
 
+		<?php if(has_nav_menu('footer')){ ?>
 		<div id="middle-footer">
 			<div class="ak-container">
 				<div class="footer-menu">
-					<?php wp_nav_menu( array( 'theme_location' => 'footer', 'depth' => -1 ) ); ?>
+					<?php wp_nav_menu( array( 'theme_location' => 'footer', 'depth' => -1, 'fallback_cb' => false ) ); ?>
 				</div>
 			</div>
 		</div> <!-- middle-footr end -->
+		<?php } ?>
 
 		<div id="bottom-footer" class="clearfix">
 			<div class="ak-container">
-				<div class="copyright"><?php _e('WordPress Theme: ', 'accesspress-root'); ?> <a title="AccessPress Themes" href="<?php echo esc_url('https://accesspressthemes.com','accesspress-root'); ?>">AccessPress Root</a> </div>
+				<div class="copyright"><?php _e('WordPress Theme: ', 'accesspress-root'); ?> <a title="AccessPress Themes" href="<?php echo esc_url('http://accesspressthemes.com/wordpress-themes/accesspress-root'); ?>">AccessPress Root</a>  by AccessPress Themes </div>
 				<ul class="social-icon">
 					<?php do_action('accesspress_social'); ?>
 				</ul>
@@ -62,17 +64,6 @@
 </div> <!-- Inner wrap -->
 </div> <!-- Outer wrap -->
 <?php wp_footer(); ?>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-78803128-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 
 </body>
 </html>
