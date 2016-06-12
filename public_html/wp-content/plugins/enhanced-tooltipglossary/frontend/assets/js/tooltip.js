@@ -209,6 +209,17 @@ CM_Tooltip.glossaryTip = null;
 
                 tooltipContent = $(this).data('cmtooltip');
 
+                $(this).click(function (event) {
+                    var isTouch = window.Modernizr && Modernizr.touch;
+                        lastClick = $(this).data('lastclikck');
+
+                    if (!lastClick || Date.now() - lastClick < 500) {
+                        event.preventDefault();
+                    }
+
+                    $(this).data('lastclikck', Date.now());
+                });
+
                 $(this).mouseenter(function () {
                     clearTimeout(CM_Tooltip.timeoutId);
                     CM_Tooltip.glossaryTip.show(tooltipContent, this);
