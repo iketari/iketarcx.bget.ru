@@ -213,7 +213,7 @@ CM_Tooltip.glossaryTip = null;
                     var isTouch = window.Modernizr && Modernizr.touch,
                         lastClick = $(this).data('lastclikck');
 
-                    if (isTouch && (!lastClick || Date.now() - lastClick < 500)) {
+                    if (isTouch && (!lastClick || Date.now() - lastClick > 500)) {
                         event.preventDefault();
                     }
 
