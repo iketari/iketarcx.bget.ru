@@ -15,6 +15,10 @@ Version:        0.1.0
     position: relative !important;
 }
 
+.utl-mobile-padding {
+    display: none !important;
+}
+
 /*Custom blocks*/
 
 .blocks {
