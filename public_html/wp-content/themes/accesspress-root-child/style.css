@@ -9,6 +9,12 @@ Version:        0.1.0
 
 @import url("../accesspress-root/style.css");
 
+/*Fixes*/
+
+.utl-mobile .uptl_container-share {
+    position: relative !important;
+}
+
 /*Custom blocks*/
 
 .blocks {
